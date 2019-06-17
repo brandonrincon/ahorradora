@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "466143008538",
+    "firebase_url": "https://ahorradora-e430b.firebaseio.com",
+    "project_id": "ahorradora-e430b",
+    "storage_bucket": "ahorradora-e430b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466143008538:android:9e084d012185b08d",
+        "android_client_info": {
+          "package_name": "ahorradora.rincon.ahorradora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466143008538-0gpmr065pcc7avfp1228plkeu80ket54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANR0inK0JwotJgR6tFcC_w3FA6nHQYqSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466143008538-0gpmr065pcc7avfp1228plkeu80ket54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
