@@ -38,8 +38,8 @@ class SqlProvider{
     return casilla;
   }
 
-  Future<dynamic> updateEstadoCasilla(int id) async {
-    await db.rawUpdate('UPDATE casilla  SET  marcada=1 WHERE id=?', [id]);
+  Future<dynamic> updateEstadoCasilla(Casilla casilla) async {
+    await db.rawUpdate('UPDATE casilla  SET  marcada=? WHERE id=?', [casilla.marcada?1:0,casilla.id]);
   }
 
   Future<List<Map>> sumatoriaCasilla() async {

@@ -15,12 +15,12 @@ class MenuPageState extends State<Menu> {
 
   DataProvider dataProvider;
   int currentTabIndex = 0;
-  List<Widget> tabs =[
-    new Categoria(index: 0),
-    new Categoria(index: 1),
-    new Categoria(index: 2),
-    new Categoria(index: 3),
-    new Categoria(index: 4),
+  static final List<Widget> tabs =[
+     new Categoria(index: 0),
+     new Categoria(index: 1),
+     new Categoria(index: 2),
+     new Categoria(index: 3),
+     new Categoria(index: 4),
   ];
 
   @override
@@ -41,7 +41,7 @@ class MenuPageState extends State<Menu> {
         appBar: AppBar(
           title: Text('Ahorradora'),
         ),
-        body: tabs[currentTabIndex],
+        body:  tabs[currentTabIndex],
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           fixedColor: Colors.white30,
