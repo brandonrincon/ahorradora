@@ -21,7 +21,10 @@ class MenuPageState extends State<Menu> {
      new Categoria(index: 2),
      new Categoria(index: 3),
      new Categoria(index: 4),
+     new Categoria(index: 5),
   ];
+
+  Widget currentW=tabs[0];
 
   @override
   initState()  {
@@ -32,6 +35,7 @@ class MenuPageState extends State<Menu> {
   onTapped(int index) {
     setState(() {
       currentTabIndex = index;
+      currentW= tabs[currentTabIndex];
     });
   }
 
@@ -40,8 +44,18 @@ class MenuPageState extends State<Menu> {
       return Scaffold(
         appBar: AppBar(
           title: Text('Ahorradora'),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.select_all),
+              onPressed: (){
+                setState(() {
+                  currentW=tabs[5];
+                });
+              },
+            ),
+          ],
         ),
-        body:  tabs[currentTabIndex],
+        body:  currentW,
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           fixedColor: Colors.white30,

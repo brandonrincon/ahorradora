@@ -35,7 +35,7 @@ class CategoriaPageState extends State<Categoria> {
     List<Casilla> c = await dataProvider.sqlProvider.getCasillas(widget.index);
     List<Map<dynamic, dynamic>> a =
         await dataProvider.sqlProvider.sumatoriaCasilla();
-    if (a != null && a.first != null) {
+    if (a != null && a.first['suma'] != null) {
       final FlutterMoneyFormatter formatter =
           FlutterMoneyFormatter(amount: a.first['suma'].ceilToDouble());
       setState(() {
@@ -71,7 +71,7 @@ class CategoriaPageState extends State<Categoria> {
       child: Column(children: <Widget>[
         Container(
           constraints: BoxConstraints(
-            maxHeight: 420,
+            maxHeight: 490,
           ),
           decoration: BoxDecoration(
             gradient: LinearGradient(
