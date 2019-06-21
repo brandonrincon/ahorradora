@@ -26,7 +26,7 @@ class _LoginPageState extends State<Login> {
     Usuario s= await sqlProvider.getUserUnique();
     print(s);
     if(s!=null){
-      Navigator.pushNamed(context, '/menu');
+      Navigator.pushReplacementNamed(context, '/menu');
     }
   }
 
@@ -52,7 +52,7 @@ class _LoginPageState extends State<Login> {
       await sqlProvider.open();
       u = await sqlProvider.insertUser(u);
       print(u.email);
-      Navigator.pushNamed(context, '/menu');
+      Navigator.pushReplacementNamed(context, '/menu');
     }
   }
 

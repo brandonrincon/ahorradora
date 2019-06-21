@@ -46,6 +46,7 @@ class MenuPageState extends State<Menu> {
           title: Text('Ahorradora'),
           actions: <Widget>[
             IconButton(
+              color: Colors.white,
               icon: Icon(Icons.select_all),
               onPressed: (){
                 setState(() {
